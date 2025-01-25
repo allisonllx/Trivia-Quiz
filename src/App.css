@@ -1,0 +1,100 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+hr {
+  opacity: 50%;
+}
+
+input[type="text"] {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.question--question {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.question--options button {
+margin: 0px 10px 5px 10px;
+}
+
+.question--options-btn.incorrect {
+  background-color: rgb(249, 127, 127, 0.5);
+}
+
+.question--options-btn.correct {
+  background-color: rgb(74, 202, 102, 0.75);
+}
+
+.modal-btn button {
+  margin: 0px 10px;
+}
+
+.leaderboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.leaderboard h2 {
+  padding-top: 20px;
+}
+
+.leaderboard table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  border-top: none;
+  border-bottom: none;
+}
+
+.leaderboard th, .leaderboard td {
+  padding: 12px 20px;
+  text-align: left;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s;
+}
+
+.leaderboard th {
+  background-color: #3f51b5;
+  color: white;
+  font-weight: bold;
+}
+
+.leaderboard tr:hover td {
+  background-color: #f1f1f1;
+}
+
+.leaderboard tr:last-child td {
+  border-bottom: none;
+}
+
+.leaderboard td {
+  background-color: #ffffff;
+}
+
+.leaderboard td {
+  border-radius: 4px;
+}
+
+.leaderboard th:first-child {
+  border-radius: 4px 0 0 4px; 
+}
+
+.leaderboard th:last-child {
+  border-radius: 0 4px 4px 0; 
+}
